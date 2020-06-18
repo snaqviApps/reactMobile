@@ -1,14 +1,26 @@
 import React from 'react'
-import { Text, StyleSheet, View } from 'react-native';
+import { Text, StyleSheet, View, Button, Alert } from 'react-native';
 
 const ComponentsScreen = ()=> {
-  
-  return <Text style={styles.textStyle}> This is the component_s screen</Text>;
+// const greetings = ['  Hi there',' , ','Bye there']
+const greetings = "Hellow funter-man"
+return (
+    <View>
+      <Text style={styles.textStyle}>Getting started with react-native</Text>
+      <Text style={styles.s_textStyle}>{greetings}</Text>
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
   textStyle: {
-    fontSize: 30
+    fontSize: 45
+  },
+  s_textStyle: {
+    fontSize: 50,
+    textAlign: 'center',
+    color: 'red',
+    fontStyle: 'italic'
   }
 });
 

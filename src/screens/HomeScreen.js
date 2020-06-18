@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { Text, StyleSheet, View } from "react-native";
 
 const HomeScreen = () => {
   return <Text style={styles.text}> Hi Sun-She, Baba, no it is sun shi</Text>;
