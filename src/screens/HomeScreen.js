@@ -1,16 +1,16 @@
 import React from 'react';
 import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
 
-const HomeScreen = (propsH) => {
+const HomeScreen = ({ navigation }) => {      // ES 2015 JS for code - condensation
   // console.log(propsH.navigation);
   return (
       <View>
           <Text style={styles.StyleSheet}>How are you doing :)</Text>
           <Button
-              onPress={() => propsH.navigation.navigate('List')}
+              onPress={() => navigation.navigate('components')}
               title="Hmm here is the button"
           />
-          <TouchableOpacity  onPress={() => console.log('List pressed')}>
+          <TouchableOpacity  onPress={() => navigation.navigate('List')}>
             <Text>Go to Awallah </Text>
             <Text>Go to Awallah </Text>
             <Text>Go to Awallah </Text>
