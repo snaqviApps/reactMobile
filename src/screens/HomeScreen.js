@@ -7,14 +7,19 @@ const HomeScreen = ({ navigation }) => {      // ES 2015 JS for code - condensat
       <View>
           <Text style={styles.StyleSheet}>How are you doing :)</Text>
           <Button
-              onPress={() => navigation.navigate('components')}
               title="Hmm here is the button"
+              onPress={() => navigation.navigate('components')}
           />
           <TouchableOpacity  onPress={() => navigation.navigate('List')}>
-            <Text>Go to Awallah </Text>
-            <Text>Go to Awallah </Text>
-            <Text>Go to Awallah </Text>
+            <Text>Go to Awiwalla </Text>
+            <Text>Go to Awiwalla </Text>
+            <Text>Go to Awiwalla </Text>
           </TouchableOpacity>
+
+          <Button
+              title="Go to Images Demo"
+              onPress={() => navigation.navigate('Image')}
+          />
         </View>
       );
   };
